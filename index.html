@@ -52,14 +52,14 @@
     border: 1px solid rgba(255,255,255,0.08);
   }
   #controls button {
-    background: none; border: none; color: var(--navy-70); cursor: pointer;
+    background: none; border: none; color: var(--navy-10); cursor: pointer;
     font-size: 18px; padding: 6px 10px; border-radius: 8px;
     transition: all 0.2s;
   }
   #controls button:hover { color: var(--white); background: rgba(255,255,255,0.08); }
   #controls button.active { color: var(--green); }
   #slide-counter {
-    color: var(--dark-grey); font-size: 13px; font-weight: 500;
+    color: var(--navy-10); font-size: 13px; font-weight: 500;
     min-width: 60px; text-align: center;
   }
 
@@ -115,10 +115,10 @@
   .hero-title .accent { color: var(--green); }
   .section-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--green); margin-bottom: 16px; }
   .section-title { font-size: 48px; font-weight: 700; line-height: 1.15; margin-bottom: 20px; }
-  .section-subtitle { font-size: 22px; font-weight: 400; color: var(--dark-grey); max-width: 700px; margin: 0 auto; line-height: 1.6; }
-  .body-text { font-size: 20px; color: var(--dark-grey); max-width: 720px; margin: 0 auto; line-height: 1.7; }
+  .section-subtitle { font-size: 22px; font-weight: 400; color: var(--navy-10); max-width: 700px; margin: 0 auto; line-height: 1.6; }
+  .body-text { font-size: 20px; color: var(--navy-10); max-width: 720px; margin: 0 auto; line-height: 1.7; }
   .big-number { font-size: 80px; font-weight: 800; color: var(--green); line-height: 1; }
-  .big-label { font-size: 18px; color: var(--navy-70); margin-top: 8px; font-weight: 500; }
+  .big-label { font-size: 18px; color: var(--navy-10); margin-top: 8px; font-weight: 500; }
 
   .highlight, .highlight-green { color: var(--green); font-weight: 600; }
   .highlight-amber { color: var(--amber); font-weight: 600; }
@@ -138,7 +138,7 @@
   }
   .step-num { font-size: 28px; font-weight: 800; color: var(--green); margin-bottom: 8px; }
   .step-label { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
-  .step-desc { font-size: 12px; color: var(--navy-70); line-height: 1.4; }
+  .step-desc { font-size: 12px; color: var(--navy-10); line-height: 1.4; }
 
   .network-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
   .network-card {
@@ -146,7 +146,7 @@
     border-radius: 14px; padding: 22px 18px; text-align: left;
   }
   .network-name { font-size: 16px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
-  .network-detail { font-size: 13px; color: var(--navy-70); line-height: 1.5; }
+  .network-detail { font-size: 13px; color: var(--navy-10); line-height: 1.5; }
 
   .cap-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 28px; }
   .cap-card {
@@ -154,7 +154,7 @@
     border-radius: 14px; padding: 22px 14px; text-align: center;
   }
   .cap-name { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 6px; }
-  .cap-desc { font-size: 12px; color: var(--navy-70); line-height: 1.4; }
+  .cap-desc { font-size: 12px; color: var(--navy-10); line-height: 1.4; }
 
   .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
   .compare-card {
@@ -211,7 +211,7 @@
   .route-line { display: flex; align-items: center; justify-content: center; gap: 0; margin-top: 32px; flex-wrap: wrap; }
   .route-stop { text-align: center; min-width: 100px; }
   .stop-name { font-size: 13px; font-weight: 700; color: var(--white); }
-  .stop-detail { font-size: 11px; color: var(--navy-70); margin-top: 4px; }
+  .stop-detail { font-size: 11px; color: var(--navy-10); margin-top: 4px; }
   .route-connector { width: 40px; height: 2px; background: linear-gradient(90deg, var(--green), var(--iso-green-1)); margin: 0 4px; flex-shrink: 0; position: relative; top: -12px; }
 
   /* Feature matrix table */
@@ -257,7 +257,7 @@
         <path class="cls-2" d="M277.25,120.7l-4.8-14.04h-25.12l-4.99,14.04h-12.28l24.47-65.84h11.27l24.28,65.84h-12.83ZM259.98,69.73h-.18l-9.05,26.41h18.19l-8.96-26.41h0Z"/>
         <path class="cls-2" d="M332.76,120.7l-15.42-24.65h-10.62v24.65h-12.28V54.86h26.04c3.02,0,5.76.34,8.22,1.02s4.77,1.88,6.93,3.6c2.28,1.79,4.05,4.08,5.31,6.88,1.26,2.8,1.89,5.86,1.89,9.19,0,1.97-.26,3.92-.79,5.86-.52,1.94-1.32,3.76-2.4,5.45-1.08,1.69-2.43,3.22-4.06,4.57-1.63,1.36-3.56,2.43-5.77,3.23l16.34,26.04h-13.39ZM330.82,75.45c0-1.91-.31-3.52-.92-4.85-.62-1.32-1.46-2.38-2.54-3.19-1.08-.8-2.34-1.37-3.79-1.71s-3.03-.51-4.76-.51h-12.1v20.5h12.28c3.57,0,6.43-.85,8.59-2.54,2.15-1.69,3.23-4.26,3.23-7.71h.01Z"/>
         <path class="cls-2" d="M397.92,109.71c-1.39,2.71-3.23,4.96-5.54,6.74-2.31,1.79-4.94,3.13-7.89,4.02s-6,1.34-9.14,1.34c-3.57,0-6.97-.49-10.2-1.48-3.23-.98-6.08-2.45-8.54-4.39-2.46-1.94-4.42-4.31-5.86-7.11-1.45-2.8-2.17-6.05-2.17-9.74v-21.05c0-3.88.69-7.32,2.08-10.34,1.39-3.02,3.28-5.56,5.68-7.62,2.4-2.06,5.19-3.63,8.36-4.71,3.17-1.08,6.57-1.62,10.2-1.62,3.14,0,6.22.4,9.23,1.19s5.69,2.03,8.03,3.71,4.23,3.82,5.68,6.43c1.45,2.61,2.17,5.76,2.17,9.45v2.03h-11.63v-.92c0-2.15-.42-3.94-1.25-5.36s-1.91-2.55-3.23-3.42c-1.32-.86-2.79-1.46-4.39-1.8-1.6-.34-3.14-.51-4.62-.51-1.6,0-3.23.22-4.89.65s-3.17,1.16-4.52,2.18c-1.36,1.02-2.48,2.35-3.37,3.99-.89,1.64-1.34,3.63-1.34,5.98v21.14c0,1.98.4,3.76,1.2,5.33.8,1.58,1.86,2.89,3.19,3.94,1.32,1.05,2.86,1.85,4.62,2.41s3.62.83,5.59.83c1.48,0,3-.22,4.57-.65s2.97-1.13,4.2-2.09c1.23-.96,2.25-2.2,3.05-3.72.8-1.52,1.2-3.36,1.2-5.53v-1.58h-16.99v-11.08h28.62v13.76c0,3.69-.69,6.9-2.08,9.6h-.02Z"/>
-        <path class="cls-2" d="M460.18,97.52c0,3.88-.75,7.33-2.26,10.34-1.51,3.02-3.51,5.56-6,7.62s-5.31,3.63-8.45,4.71-6.34,1.62-9.6,1.62c-3.57,0-6.97-.49-10.2-1.48-3.23-.98-6.08-2.45-8.54-4.39-2.46-1.94-4.42-4.31-5.86-7.11-1.45-2.8-2.17-6.05-2.17-9.74v-21.05c0-3.88.75-7.32,2.26-10.34s3.51-5.56,6-7.62c2.49-2.06,5.31-3.63,8.45-4.71s6.34-1.62,9.6-1.62c3.57,0,6.97.57,10.2,1.71s6.08,2.74,8.54,4.8c2.46,2.06,4.42,4.57,5.86,7.53,1.45,2.95,2.17,6.28,2.17,9.97,0,0,0,19.76,0,19.76ZM447.99,77.07c0-1.98-.4-3.74-1.2-5.28-.8-1.54-1.86-2.86-3.19-3.94-1.32-1.08-2.88-1.9-4.66-2.46-1.79-.56-3.63-.84-5.54-.84-1.6,0-3.23.22-4.89.65s-3.17,1.16-4.52,2.18c-1.36,1.02-2.48,2.35-3.37,3.99-.89,1.64-1.34,3.63-1.34,5.98v21.14c0,1.98.4,3.76,1.2,5.33.8,1.58,1.86,2.89,3.19,3.94,1.32,1.05,2.86,1.85,4.62,2.41,1.75.56,3.62.83,5.59.83,1.54,0,3.15-.22,4.85-.65,1.69-.43,3.22-1.16,4.57-2.18,1.35-1.02,2.48-2.35,3.37-3.99.89-1.64,1.34-3.63,1.34-5.98v-21.14h-.02Z"/>
+        <path class="cls-2" d="M460.18,97.52c0,3.88-.75,7.33-2.26,10.34-1.51,3.02-3.51,5.56-6,7.62s-5.31,3.63-8.45,4.71-6.34,1.62-9.6,1.62c-3.57,0-6.97-.49-10.2-1.48-3.23-.98-6.04-2.45-8.54-4.39-2.46-1.94-4.42-4.31-5.86-7.11-1.45-2.8-2.17-6.05-2.17-9.74v-21.05c0-3.88.75-7.32,2.26-10.34s3.51-5.56,6-7.62c2.49-2.06,5.31-3.63,8.45-4.71s6.34-1.62,9.6-1.62c3.57,0,6.97.57,10.2,1.71s6.08,2.74,8.54,4.8c2.46,2.06,4.42,4.57,5.86,7.53,1.45,2.95,2.17,6.28,2.17,9.97,0,0,0,19.76,0,19.76ZM447.99,77.07c0-1.98-.4-3.74-1.2-5.28-.8-1.54-1.86-2.86-3.19-3.94-1.32-1.08-2.88-1.9-4.66-2.46-1.79-.56-3.63-.84-5.54-.84-1.6,0-3.23.22-4.89.65s-3.17,1.16-4.52,2.18c-1.36,1.02-2.48,2.35-3.37,3.99-.89,1.64-1.34,3.63-1.34,5.98v21.14c0,1.98.4,3.76,1.2,5.33.8,1.58,1.86,2.89,3.19,3.94,1.32,1.05,2.86,1.85,4.62,2.41,1.75.56,3.62.83,5.59.83,1.54,0,3.15-.22,4.85-.65,1.69-.43,3.22-1.16,4.57-2.18,1.35-1.02,2.48-2.35,3.37-3.99.89-1.64,1.34-3.63,1.34-5.98v-21.14h-.02Z"/>
         <path class="cls-2" d="M227.22,67.79c-1.45-2.95-3.4-5.46-5.86-7.53-2.46-2.06-5.31-3.66-8.54-4.8s-6.63-1.71-10.2-1.71c-3.26,0-6.46.54-9.6,1.62s-5.96,2.65-8.45,4.71c-2.49,2.06-4.49,4.6-6,7.62-1.51,3.02-2.26,6.46-2.26,10.34v21.05c0,3.69.72,6.94,2.17,9.74s3.4,5.17,5.86,7.11,5.31,3.4,8.54,4.39c3.23.98,6.63,1.48,10.2,1.48,1.9,0,3.78-.19,5.64-.55l15.17,9.1v-10.53l-4.75-2.85c.68-.47,1.35-.96,1.99-1.49,2.49-2.06,4.49-4.6,6-7.62,1.51-3.02,2.26-6.46,2.26-10.34v-19.76c0-3.69-.72-7.02-2.17-9.97h0ZM203.07,111c-1.97,0-3.83-.28-5.59-.83-1.75-.56-3.29-1.36-4.62-2.41-1.32-1.05-2.39-2.36-3.19-3.94s-1.2-3.35-1.2-5.33v-21.14c0-2.35.45-4.34,1.34-5.98.89-1.64,2.02-2.97,3.37-3.99,1.35-1.02,2.86-1.75,4.52-2.18s3.29-.65,4.89-.65c1.91,0,3.75.28,5.54.84,1.78.56,3.34,1.38,4.66,2.46s2.38,2.39,3.19,3.94c.8,1.54,1.2,3.31,1.2,5.28v21.14c0,2.35-.45,4.34-1.34,5.98s-2.02,2.97-3.37,3.99c-1.35,1.02-2.88,1.75-4.57,2.18s-3.31.65-4.85.65h.02Z"/>
         <polygon class="cls-1" points="38 64.98 73.15 43.89 108.31 64.98 144.88 43.04 73.15 0 1.42 43.04 38 64.98"/>
         <polygon class="cls-1" points="71.69 130.8 36.58 109.73 36.58 67.54 0 45.6 0 131.67 71.69 174.69 71.69 130.8"/>
@@ -429,7 +429,7 @@
             <div class="network-detail">Full integration via API + sFTP. Polling every 10 mins. Multi-depot.</div>
           </div>
           <div class="network-card" style="background:rgba(255,255,255,0.02);border-color:rgba(255,255,255,0.08);max-width:280px;">
-            <div class="network-name" style="color:var(--navy-70);">
+            <div class="network-name" style="color:var(--navy-10);">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="display:inline-block;margin-right:8px;vertical-align:middle;">
                 <circle cx="10" cy="10" r="8" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
                 <path d="M10 7V13M10 13L13 10M10 13L7 10" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/>
@@ -738,7 +738,7 @@
             </tr>
           </table>
         </div>
-        <div style="margin-top:12px;font-size:12px;color:var(--navy-70);" class="reveal d3">
+        <div style="margin-top:12px;font-size:12px;color:var(--navy-10);" class="reveal d3">
           <span class="check">&#10003;</span> = Full support &nbsp;&nbsp;
           <span class="partial">Partial</span> = Limitations apply &nbsp;&nbsp;
           <span class="cross">&#10007;</span> = Not supported
@@ -956,7 +956,7 @@
             <h3 style="color:var(--white);font-size:20px;font-weight:700;margin-bottom:12px;text-align:center;">
               <span class="highlight">Collection</span> Depot
             </h3>
-            <div style="color:var(--dark-grey);font-size:14px;line-height:1.7;">
+            <div style="color:var(--navy-10);font-size:14px;line-height:1.7;">
               <strong style="color:var(--white);">Palletline:</strong> SCOT (loaded onto trunk)<br>
               <strong style="color:var(--white);">Palletforce:</strong> SRID + SCOT<br>
               <strong style="color:var(--white);">TPN:</strong> Scanned out (trunk hub)<br>
@@ -975,7 +975,7 @@
             <h3 style="color:var(--white);font-size:20px;font-weight:700;margin-bottom:12px;text-align:center;">
               <span class="highlight">Delivery</span> Depot
             </h3>
-            <div style="color:var(--dark-grey);font-size:14px;line-height:1.7;">
+            <div style="color:var(--navy-10);font-size:14px;line-height:1.7;">
               <strong style="color:var(--white);">Palletline:</strong> ARRD + SCDV + ARRI + EPOD<br>
               <strong style="color:var(--white);">Palletforce:</strong> ARRD + DELV<br>
               <strong style="color:var(--white);">Pallex:</strong> Code 14 (loaded on vehicle)<br>
