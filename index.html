@@ -763,7 +763,7 @@
         <div style="margin-top:12px;font-size:12px;color:var(--navy-10);" class="reveal d3">
           <span class="check">&#10003;</span> = Full support &nbsp;&nbsp;
           <span class="partial">Partial</span> = Limitations apply &nbsp;&nbsp;
-          <span class="cross">&#10007;</span> = Not supported
+          <span class="cross">&#10007;</span> = Not supported&nbsp;&nbsp;&nbsp;<span style="color:var(--amber)">TBD</span> = Coming soon
         </div>
         <div style="margin-top:14px;font-size:13px;color:var(--navy-10);" class="reveal d4">
           A full list of capabilities can be found on the <a href="https://www.notion.so/qargo/Pallet-Network-Integrations-Overview-224e32e8f8c880d88d9eef49fad9d6ad" target="_blank" style="color:var(--green);text-decoration:underline;">Pallet Network Integrations Overview</a> Notion page.
@@ -776,7 +776,7 @@
       <div class="slide-inner">
         <div class="section-label reveal">Network Deep Dive</div>
         <div class="section-title reveal d1"><span class="highlight">Palletline</span>
-            <span style="margin-left:1.5rem; color:var(--navy-30)">TBD = Coming soon</span> &mdash; the deepest integration</div>
+             &mdash; the deepest integration<span class="reveal d4" style="margin-left:1.5rem; color:var(--navy-30)"><span style="color:var(--amber)">TBD</span> = Coming soon</span></div>
         <div class="two-col reveal d2">
           <div class="col-card" style="text-align:left;">
             <div class="col-card-title">Strengths</div>
@@ -964,7 +964,38 @@
     </div>
 
     <!-- SLIDE 14: Cross Dock Comparison -->
-    <div class="slide" data-duration="9000">
+    
+    <!-- PALLET TRACK DEEP DIVE -->
+    <div class="slide" data-duration="12000">
+      <div class="slide-inner">
+        <div class="section-label reveal">Network Deep Dive</div>
+        <div class="slide-title reveal d1">
+          Pallet Track &mdash; newly integrated
+        </div>
+        <div class="two-col" style="margin-top:32px">
+          <div class="col-card reveal d2">
+            <div class="col-card-title" style="color:var(--green)">Strengths</div>
+            <div class="col-card-body">
+              <strong>Full order lifecycle</strong> &mdash; order import, export, updates, and cancellations all supported.<br><br>
+              <strong>Comprehensive document exchange</strong> &mdash; ePOD export, POD both ways, and delivery images bidirectional.<br><br>
+              <strong>Cross-dock scanning</strong> &mdash; collection and delivery depot scans supported.<br><br>
+              <strong>Labels &amp; multi-depot</strong> &mdash; label generation and multi-depot operation both active.
+            </div>
+          </div>
+          <div class="col-card reveal d3">
+            <div class="col-card-title" style="color:var(--amber, #FCB220)">Limitations</div>
+            <div class="col-card-body">
+              <strong>No COP</strong> &mdash; Customer Own Paperwork is not yet supported. On the roadmap.<br><br>
+              <strong>ETA import TBD</strong> &mdash; ETA export works, but import from the network is not yet available.<br><br>
+              <strong>ePOD import TBD</strong> &mdash; ePOD export works, but receiving ePODs from the network is still in progress.<br><br>
+              <strong>Status import partial</strong> &mdash; status export works fully, but import has limited coverage.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="slide" data-duration="9000">
       <div class="slide-inner" style="max-width:1020px;">
         <div class="section-label reveal">Cross Dock Scanning</div>
         <div class="section-title reveal d1" style="font-size:38px;">Depot scanning <span class="highlight">by network</span></div>
@@ -1046,6 +1077,14 @@
           <div class="glossary-item">
             <div class="glossary-term">Palletforce POD Export</div>
             <div class="glossary-def">Palletforce strictly prevents POD document export via their API. Only ePOD or COP can be sent.</div>
+          </div>
+          <div class="glossary-def reveal d8">
+            <div class="glossary-term" style="color:var(--amber, #FCB220)">Pallet Track COP</div>
+            <div class="glossary-desc">COP is not supported in either direction. On the roadmap for a future release.</div>
+          </div>
+          <div class="glossary-def reveal d9">
+            <div class="glossary-term" style="color:var(--amber, #FCB220)">Pallet Track ePOD &amp; ETA Import</div>
+            <div class="glossary-desc">ePOD import and ETA import are not yet available. Export works in both cases.</div>
           </div>
         </div>
       </div>
