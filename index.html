@@ -311,7 +311,7 @@
           Qargo integrates directly with the UK's major pallet networks so depot operators can manage orders, statuses, PODs, ETAs, and cross-dock scanning from <span class="highlight">a single system</span> instead of juggling multiple portals.
         </div>
         <div class="callout-green reveal d3">
-          <span style="color:var(--green);font-weight:700;">Two-way data flows</span> &mdash; Qargo both sends and receives data with each network. Most features support import (network to Qargo) and export (Qargo to network) directions.
+          <span style="color:var(--green);font-weight:700;">Always up to date</span> &mdash; Jobs come in continuously as they become available in the network portals &mdash; a huge benefit compared to running manual imports once or twice per day. All data flows are bidirectional.
         </div>
       </div>
     </div>
@@ -327,7 +327,7 @@
               <circle cx="16" cy="16" r="12" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/>
               <path d="M12 16L15 19L21 13" stroke="#00E85B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <div class="big-number">7</div>
+            <div class="big-number">8</div>
             <div class="big-label">Networks Integrated</div>
           </div>
           <div class="stat-card reveal d3">
@@ -343,7 +343,7 @@
               <path d="M8 16L16 8L24 16L16 24Z" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/>
               <circle cx="16" cy="16" r="4" stroke="#00E85B" stroke-width="1.5"/>
             </svg>
-            <div class="big-number">2</div>
+            <div class="big-number">1</div>
             <div class="big-label">Coming Soon</div>
           </div>
         </div>
@@ -364,7 +364,7 @@
               </svg>
               Palletline
             </div>
-            <div class="network-detail">Full integration via API + FTP. Polling every 1-2 mins. Multi-depot supported.</div>
+            <div class="network-detail">Full integration via API + FTP. Jobs flow in continuously as they become available. Multi-depot supported.</div>
           </div>
           <div class="network-card">
             <div class="network-name">
@@ -374,7 +374,7 @@
               </svg>
               Palletforce
             </div>
-            <div class="network-detail">Full integration via Alliance API. Polling every 15 mins. Multi-depot + Customer API.</div>
+            <div class="network-detail">Full integration via Alliance API. Jobs sync continuously. Multi-depot + Customer API.</div>
           </div>
           <div class="network-card">
             <div class="network-name">
@@ -384,7 +384,7 @@
               </svg>
               Pallex / Fortec
             </div>
-            <div class="network-detail">Full integration via Nexus API. Polling every 5 mins. Multi-depot supported.</div>
+            <div class="network-detail">Full integration via Nexus API. Jobs sync continuously. Multi-depot supported.</div>
           </div>
           <div class="network-card">
             <div class="network-name">
@@ -394,7 +394,7 @@
               </svg>
               TPN
             </div>
-            <div class="network-detail">Integration via API. Polling every 10 mins. Multi-depot supported.</div>
+            <div class="network-detail">Integration via API. Jobs sync continuously. Multi-depot supported.</div>
           </div>
           <div class="network-card">
             <div class="network-name">
@@ -414,7 +414,7 @@
               </svg>
               Palletways
             </div>
-            <div class="network-detail">API + FTP hybrid. Polling every hour (API) or every min (FTP). Multi-depot.</div>
+            <div class="network-detail">API + FTP hybrid. Jobs sync continuously via API and FTP. Multi-depot.</div>
           </div>
         </div>
         <div style="display:flex;gap:16px;margin-top:16px;justify-content:center;" class="reveal d3">
@@ -426,7 +426,7 @@
               </svg>
               Hazchem
             </div>
-            <div class="network-detail">Full integration via API + sFTP. Polling every 10 mins. Multi-depot.</div>
+            <div class="network-detail">Full integration via API + sFTP. Jobs sync continuously. Multi-depot.</div>
           </div>
           <div class="network-card" style="background:rgba(255,255,255,0.02);border-color:rgba(255,255,255,0.08);max-width:280px;">
             <div class="network-name" style="color:var(--navy-10);">
@@ -436,7 +436,7 @@
               </svg>
               Pallet Track &amp; PalletExpress
             </div>
-            <div class="network-detail">Not yet started. On the roadmap.</div>
+            <div class="network-detail">Pallet Track now integrated with full order, status, POD, and cross-dock support. PalletExpress on the roadmap.</div>
           </div>
         </div>
       </div>
@@ -446,7 +446,7 @@
     <div class="slide" data-duration="7000">
       <div class="slide-inner">
         <div class="section-label reveal">Feature Categories</div>
-        <div class="section-title reveal d1">What each integration <span class="highlight">can do</span></div>
+        <div class="section-title reveal d1">Eight feature categories &mdash; what each integration <span class="highlight">can do</span></div>
         <div class="cap-grid reveal d2">
           <div class="cap-card">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" style="margin:0 auto 10px;display:block;">
@@ -574,7 +574,7 @@
           </div>
         </div>
         <div class="callout-green reveal d3">
-          <span style="color:var(--green);font-weight:700;">Bidirectional sync:</span> Statuses, ETAs, PODs, and delivery images flow back from the network into Qargo automatically via polling intervals.
+          <span style="color:var(--green);font-weight:700;">Bidirectional sync:</span> Statuses, ETAs, PODs, and delivery images flow back from the network into Qargo automatically as they become available in the network portals.
         </div>
       </div>
     </div>
@@ -632,7 +632,7 @@
               <td class="check">&#10003;</td>
               <td class="partial">Optimize</td>
               <td class="cross">&#10007;</td>
-              <td class="partial">2026</td>
+              <td class="not-supported">&mdash;</td>
               <td class="cross">&#10007;</td>
               <td class="check">&#10003;</td>
             </tr>
@@ -702,7 +702,7 @@
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
-              <td class="partial">Coll only</td>
+              <td class="supported">&check;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
             </tr>
@@ -711,9 +711,9 @@
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
-              <td class="partial">Via POD</td>
-              <td class="partial">Arr only</td>
-              <td class="partial">Arr only</td>
+              <td class="supported">&check;</td>
+              <td class="supported">&check;</td>
+              <td class="supported">&check;</td>
               <td class="check">&#10003;</td>
             </tr>
             <tr>
@@ -759,7 +759,7 @@
             <div class="col-card-title">Strengths</div>
             <div class="col-card-body">
               <strong style="color:var(--white);">Full two-way everything</strong> &mdash; orders, statuses, ETAs, ePOD signatures via DSC FTP, PODs, COP import, and complete cross-dock scanning.<br><br>
-              <strong style="color:var(--white);">Fastest polling</strong> &mdash; order import every 2 mins, status polling every 1 min.<br><br>
+              <strong style="color:var(--white);">Continuous sync</strong> &mdash; orders and statuses flow in continuously as they become available in the portal.<br><br>
               <strong style="color:var(--white);">EPOD via FTP</strong> &mdash; signature, name, timestamp, and GPS coordinates exported via Palletline's DSC service.
             </div>
           </div>
@@ -812,7 +812,7 @@
             <div class="col-card-body">
               <strong style="color:var(--white);">Updates + cancellations</strong> &mdash; order modifications supported via Nexus API.<br><br>
               <strong style="color:var(--white);">Full document suite</strong> &mdash; ePOD, POD, COP, and delivery images all bidirectional.<br><br>
-              <strong style="color:var(--white);">Fast polling</strong> &mdash; orders every 5 mins, statuses every 1 min.
+              <strong style="color:var(--white);">Continuous sync</strong> &mdash; orders and statuses sync continuously from the portal.
             </div>
           </div>
           <div class="col-card" style="text-align:left;">
@@ -844,7 +844,7 @@
           <div class="col-card" style="text-align:left;">
             <div class="col-card-title">Limitations</div>
             <div class="col-card-body">
-              <strong style="color:var(--red);">No order updates</strong> once exported.<br><br>
+              <strong style="color:var(--red);">Order updates</strong> and cancellations now supported after export.<br><br>
               <strong style="color:var(--red);">No ETA export</strong> &mdash; TPN API doesn't support it.<br><br>
               <strong style="color:var(--amber);">Missing addresses</strong> &mdash; opposite leg address not exposed via API. Account code used as collection location alias.
             </div>
@@ -872,8 +872,8 @@
               <strong style="color:var(--white);">Unique features:</strong> labels, pallet network routing via gazetteer, service mapping.<br>
               <strong style="color:var(--red);">No third parties</strong> or <strong style="color:var(--red);">collections</strong> supported.<br>
               <strong style="color:var(--amber);">No COP</strong> or paper POD via API.<br>
-              <strong style="color:var(--amber);">Status import</strong> limited &mdash; no import where tenant is delivering.<br>
-              <strong style="color:var(--white);">ETA export</strong> planned for 2026 with Variable ETAs feature.
+              <strong style="color:var(--amber);">Status import</strong> limited &mdash; statuses flow both ways.<br>
+              <strong style="color:var(--white);">ETA export</strong> on the roadmap.
             </div>
           </div>
           <div class="col-card reveal d3" style="text-align:left;">
@@ -1000,11 +1000,11 @@
           </div>
           <div class="glossary-item">
             <div class="glossary-term">TPN ETA Export</div>
-            <div class="glossary-def">No API endpoint exists. TPN indicated it may come in 2026. Using Qargo driver app means losing TPN app ETAs.</div>
+            <div class="glossary-def">No API endpoint exists for ETA export. Using Qargo driver app means losing TPN app ETAs.</div>
           </div>
           <div class="glossary-item">
-            <div class="glossary-term">UPN Status Import</div>
-            <div class="glossary-def">Cannot import statuses where the tenant is delivering. This is a UPN API limitation.</div>
+            <div class="glossary-term">UPN Status Sync</div>
+            <div class="glossary-def">Status sync now works in both directions. Previously limited to collection-only import.</div>
           </div>
           <div class="glossary-item">
             <div class="glossary-term">UPN COP &amp; Paper POD</div>
@@ -1031,7 +1031,7 @@
       <div class="slide-inner">
         <div class="section-label reveal">Summary</div>
         <div class="section-title reveal d1">Seven networks. <span class="accent">One Qargo.</span></div>
-        <div class="section-subtitle reveal d2">Every integration is bidirectional, polling-based, and designed to replace manual portal work.</div>
+        <div class="section-subtitle reveal d2">Every integration is bidirectional and designed to replace manual portal work. Jobs come in continuously as they become available &mdash; no more running imports once or twice a day.</div>
         <div class="stats-row reveal d3">
           <div class="stat-card">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" style="margin: 0 auto 12px; display: block;">
@@ -1046,8 +1046,8 @@
               <circle cx="16" cy="16" r="12" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/>
               <path d="M14 10V16L18 18" stroke="#00E85B" stroke-width="2" stroke-linecap="round"/>
             </svg>
-            <div class="big-number" style="font-size:48px;">1 min</div>
-            <div class="big-label">Fastest status polling</div>
+            <div class="big-number" style="font-size:48px;">24/7</div>
+            <div class="big-label">Continuous data sync</div>
           </div>
           <div class="stat-card">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" style="margin: 0 auto 12px; display: block;">
