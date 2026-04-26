@@ -306,7 +306,7 @@
     <div class="slide" data-duration="6000">
       <div class="slide-inner">
         <div class="section-label reveal">Context</div>
-        <div class="section-title reveal d1">One platform. <span class="highlight">Seven networks.</span></div>
+        <div class="section-title reveal d1">One platform. <span class="highlight">Eight networks.</span></div>
         <div class="body-text reveal d2">
           Qargo integrates directly with the UK's major pallet networks so depot operators can manage orders, statuses, PODs, ETAs, and cross-dock scanning from <span class="highlight">a single system</span> instead of juggling multiple portals.
         </div>
@@ -434,9 +434,16 @@
                 <circle cx="10" cy="10" r="8" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
                 <path d="M10 7V13M10 13L13 10M10 13L7 10" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
-              Pallet Track &amp; PalletExpress
+              Pallet Track
             </div>
-            <div class="network-detail">Pallet Track now integrated with full order, status, POD, and cross-dock support. PalletExpress on the roadmap.</div>
+            <div class="network-detail">Full integration via API. Jobs sync continuously. Multi-depot supported. Labels, ETAs, PODs, and cross-dock all active.</div>
+          </div>
+          <div class="network-card reveal d8" style="opacity:0.5">
+            <div class="network-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="6" width="22" height="16" rx="3" stroke="#555" stroke-width="1.5" fill="rgba(100,100,100,0.1)"/><path d="M9 14h10M14 10v8" stroke="#555" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            PalletExpress
+            <div class="network-desc">On the roadmap. Not yet started.</div>
           </div>
         </div>
       </div>
@@ -595,6 +602,7 @@
               <th>UPN</th>
               <th>Palletways</th>
               <th>Hazchem</th>
+              <th>PT</th>
             </tr>
             <tr>
               <td>Order Export</td>
@@ -605,6 +613,7 @@
               <td class="check">&#10003;</td>
               <td class="partial">Dlv only</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>Order Import</td>
@@ -615,6 +624,7 @@
               <td class="check">&#10003;</td>
               <td class="partial">API/FTP</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>ETA Import</td>
@@ -625,6 +635,7 @@
               <td class="check">&#10003;</td>
               <td class="cross">&#10007;</td>
               <td class="check">&#10003;</td>
+              <td class="partial">TBD</td>
             </tr>
             <tr>
               <td>ETA Export</td>
@@ -635,6 +646,7 @@
               <td class="not-supported">&mdash;</td>
               <td class="cross">&#10007;</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>ePOD Import</td>
@@ -645,6 +657,7 @@
               <td class="check">&#10003;</td>
               <td class="partial">As POD</td>
               <td class="check">&#10003;</td>
+              <td class="partial">TBD</td>
             </tr>
             <tr>
               <td>ePOD Export</td>
@@ -655,6 +668,7 @@
               <td class="check">&#10003;</td>
               <td class="partial">As POD</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>POD Import</td>
@@ -665,6 +679,7 @@
               <td class="cross">&#10007;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>POD Export</td>
@@ -675,6 +690,7 @@
               <td class="cross">&#10007;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>Delivery Images</td>
@@ -685,6 +701,7 @@
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>COP</td>
@@ -695,6 +712,7 @@
               <td class="cross">&#10007;</td>
               <td class="cross">&#10007;</td>
               <td class="check">&#10003;</td>
+              <td class="not-supported">&cross;</td>
             </tr>
             <tr>
               <td>Status Import</td>
@@ -705,6 +723,7 @@
               <td class="supported">&check;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
+              <td class="partial">Partial</td>
             </tr>
             <tr>
               <td>Status Export</td>
@@ -715,6 +734,7 @@
               <td class="supported">&check;</td>
               <td class="supported">&check;</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>Cross Dock</td>
@@ -725,6 +745,7 @@
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
             <tr>
               <td>Multi Depot</td>
@@ -735,6 +756,7 @@
               <td>&mdash;</td>
               <td class="check">&#10003;</td>
               <td class="check">&#10003;</td>
+              <td class="supported">&check;</td>
             </tr>
           </table>
         </div>
@@ -962,7 +984,8 @@
               <strong style="color:var(--white);">TPN:</strong> Scanned out (trunk hub)<br>
               <strong style="color:var(--white);">UPN:</strong> Scanned out + stored<br>
               <strong style="color:var(--white);">Palletways:</strong> Scanned in + out<br>
-              <strong style="color:var(--white);">Hazchem:</strong> DSI (scanned out)
+              <strong style="color:var(--white);">Hazchem:</strong> DSI (scanned out)<br>
+              <strong style="color:var(--green)">Pallet Track:</strong> Coll scan
             </div>
           </div>
           <div class="col-card" style="text-align:left;">
@@ -981,7 +1004,8 @@
               <strong style="color:var(--white);">Pallex:</strong> Code 14 (loaded on vehicle)<br>
               <strong style="color:var(--white);">TPN:</strong> In + stored + on vehicle<br>
               <strong style="color:var(--white);">UPN:</strong> Arrived + stored + departed<br>
-              <strong style="color:var(--white);">Hazchem:</strong> DSI + HAD + SCDV
+              <strong style="color:var(--white);">Hazchem:</strong> DSI + HAD + SCDV<br>
+              <strong style="color:var(--green)">Pallet Track:</strong> Dlv scan
             </div>
           </div>
         </div>
@@ -1030,7 +1054,7 @@
     <div class="slide" data-duration="6000">
       <div class="slide-inner">
         <div class="section-label reveal">Summary</div>
-        <div class="section-title reveal d1">Seven networks. <span class="accent">One Qargo.</span></div>
+        <div class="section-title reveal d1">Eight networks. <span class="accent">One Qargo.</span></div>
         <div class="section-subtitle reveal d2">Every integration is bidirectional and designed to replace manual portal work. Jobs come in continuously as they become available &mdash; no more running imports once or twice a day.</div>
         <div class="stats-row reveal d3">
           <div class="stat-card">
@@ -1054,7 +1078,7 @@
               <path d="M8 16L16 8L24 16L16 24Z" stroke="#00E85B" stroke-width="2" fill="rgba(0,232,91,0.1)"/>
               <circle cx="16" cy="16" r="4" stroke="#00E85B" stroke-width="1.5"/>
             </svg>
-            <div class="big-number" style="font-size:48px;">PT + PE</div>
+            <div class="big-number" style="font-size:48px;">PE</div>
             <div class="big-label">Next on the roadmap</div>
           </div>
         </div>
