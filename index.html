@@ -527,63 +527,108 @@
       </div>
     </div>
 
-    <!-- SLIDE 6: Data Flow -->
-    <div class="slide" data-duration="12000">
-      <div class="slide-inner">
-        <div class="section-label reveal">Data Flow</div>
-        <div class="section-title reveal d1">Two-way sync, <span class="highlight">always live</span></div>
-        <div class="reveal d2" style="display:flex; justify-content:center; margin-top:24px;">
-          <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="max-width:700px; width:100%">
-            <rect x="30" y="30" width="130" height="55" rx="12" fill="rgba(0,232,91,0.06)" stroke="rgba(0,232,91,0.2)" stroke-width="1"/>
-            <text x="95" y="54" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#fff">Customer</text>
-            <text x="95" y="70" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4E1E5">Places order</text>
-            <rect x="230" y="10" width="240" height="240" rx="16" fill="rgba(0,232,91,0.04)" stroke="#00E85B" stroke-width="2"/>
-            <text x="350" y="38" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="18" font-weight="800" fill="#fff">Qargo</text>
-            <text x="350" y="54" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" font-weight="500" fill="#00E85B">TMS Platform</text>
-            <text x="255" y="80" font-family="DM Sans,sans-serif" font-size="9" font-weight="600" fill="#00E85B">&#x2794; Export</text>
-            <text x="255" y="96" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">Orders &amp; consignments</text>
-            <text x="255" y="110" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">ETAs &amp; delivery windows</text>
-            <text x="255" y="124" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">ePOD &amp; POD documents</text>
-            <text x="255" y="138" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">Statuses &amp; scan events</text>
-            <text x="255" y="152" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">COP &amp; delivery images</text>
-            <text x="255" y="166" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">Cross-dock scans</text>
-            <line x1="250" y1="178" x2="450" y2="178" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-            <text x="255" y="198" font-family="DM Sans,sans-serif" font-size="9" font-weight="600" fill="#4A9EFF">&#x2794; Import</text>
-            <text x="255" y="214" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">Same data categories flow back</text>
-            <text x="255" y="228" font-family="DM Sans,sans-serif" font-size="8" fill="#D4E1E5">from the network &mdash; continuously.</text>
-            <rect x="540" y="30" width="130" height="55" rx="12" fill="rgba(0,232,91,0.06)" stroke="rgba(0,232,91,0.2)" stroke-width="1"/>
-            <text x="605" y="50" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#fff">Pallet</text>
-            <text x="605" y="64" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#fff">Network</text>
-            <text x="605" y="80" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4E1E5">API / FTP</text>
-            <rect x="540" y="115" width="130" height="45" rx="12" fill="rgba(0,232,91,0.06)" stroke="rgba(0,232,91,0.2)" stroke-width="1"/>
-            <text x="605" y="135" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#fff">Hub</text>
-            <text x="605" y="150" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4E1E5">Cross-dock scan</text>
-            <rect x="540" y="190" width="130" height="45" rx="12" fill="rgba(0,232,91,0.06)" stroke="rgba(0,232,91,0.2)" stroke-width="1"/>
-            <text x="605" y="210" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#fff">Delivery</text>
-            <text x="605" y="225" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#D4E1E5">ePOD + status</text>
-            <line x1="165" y1="55" x2="225" y2="55" stroke="#00E85B" stroke-width="1.5" stroke-dasharray="4 3"/>
-            <polygon points="223,50 233,55 223,60" fill="#00E85B"/>
-            <line x1="473" y1="48" x2="535" y2="48" stroke="#00E85B" stroke-width="1.5"/>
-            <polygon points="533,43 543,48 533,53" fill="#00E85B"/>
-            <text x="504" y="42" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="7" fill="#00E85B" font-weight="600">EXPORT</text>
-            <line x1="535" y1="72" x2="473" y2="72" stroke="#4A9EFF" stroke-width="1.5"/>
-            <polygon points="475,67 465,72 475,77" fill="#4A9EFF"/>
-            <text x="504" y="84" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="7" fill="#4A9EFF" font-weight="600">IMPORT</text>
-            <line x1="605" y1="90" x2="605" y2="110" stroke="rgba(212,225,229,0.15)" stroke-width="1.5"/>
-            <polygon points="600,108 605,115 610,108" fill="rgba(212,225,229,0.2)"/>
-            <line x1="605" y1="165" x2="605" y2="185" stroke="rgba(212,225,229,0.15)" stroke-width="1.5"/>
-            <polygon points="600,183 605,190 610,183" fill="rgba(212,225,229,0.2)"/>
-            <path d="M540,212 Q490,260 473,200" stroke="#4A9EFF" stroke-width="1" fill="none" stroke-dasharray="4 3"/>
-            <polygon points="475,203 467,198 473,193" fill="#4A9EFF" opacity="0.6"/>
-            <rect x="120" y="275" width="460" height="50" rx="10" fill="rgba(0,232,91,0.04)" stroke="rgba(0,232,91,0.15)" stroke-width="1"/>
-            <text x="350" y="296" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="10" font-weight="600" fill="#00E85B">Jobs flow in continuously as they become available</text>
-            <text x="350" y="312" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="8" fill="rgba(212,225,229,0.5)">No more running imports once or twice a day &mdash; coverage varies by network</text>
-          </svg>
-        </div>
-      </div>
-    </div>
+    <!-- SLIDE 6 ------------------------------------------------>
+<div class="slide" data-duration="12000">
+  <div class="slide-inner">
+    <span class="section-label reveal">DATA FLOW</span>
+    <h1 class="section-title reveal d1">Two-way sync, <span class="highlight">always live</span></h1>
 
-    <!-- SLIDE 7: Feature Matrix -->
+    <svg viewBox="0 0 860 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:860px;margin:0.5rem auto;display:block;" class="reveal d2">
+      <defs>
+        <marker id="aGR" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#00E85B"/></marker>
+        <marker id="aBR" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#4A9EFF"/></marker>
+        <marker id="aBL" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M10,0 L0,4 L10,8 Z" fill="#4A9EFF"/></marker>
+        <marker id="aGL" markerWidth="10" markerHeight="8" refX="1" refY="4" orient="auto"><path d="M10,0 L0,4 L10,8 Z" fill="#00E85B"/></marker>
+      </defs>
+
+      <!-- LEFT: Customer -->
+      <rect x="20" y="65" width="130" height="120" rx="10" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+      <text x="85" y="92" text-anchor="middle" fill="#E8E8E8" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Customer</text>
+      <circle cx="85" cy="120" r="10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+      <path d="M68,155 Q68,138 85,138 Q102,138 102,155" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+      <text x="85" y="175" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="system-ui,sans-serif" font-size="8">Sends &amp; receives freight</text>
+
+      <!-- CENTER: Qargo -->
+      <rect x="285" y="30" width="170" height="210" rx="10" fill="rgba(0,232,91,0.05)" stroke="#00E85B" stroke-width="1.5"/>
+      <text x="370" y="58" text-anchor="middle" fill="#E8E8E8" font-family="system-ui,sans-serif" font-size="15" font-weight="700">Qargo</text>
+      <text x="370" y="74" text-anchor="middle" fill="#00E85B" font-family="system-ui,sans-serif" font-size="9.5">TMS Platform</text>
+      <circle cx="370" cy="108" r="18" fill="none" stroke="#00E85B" stroke-width="1.5" opacity="0.3"/>
+      <circle cx="370" cy="108" r="6" fill="#00E85B" opacity="0.45"/>
+      <line x1="370" y1="90" x2="370" y2="100" stroke="#00E85B" stroke-width="1" opacity="0.3"/>
+      <line x1="370" y1="116" x2="370" y2="126" stroke="#00E85B" stroke-width="1" opacity="0.3"/>
+      <line x1="352" y1="108" x2="362" y2="108" stroke="#00E85B" stroke-width="1" opacity="0.3"/>
+      <line x1="378" y1="108" x2="388" y2="108" stroke="#00E85B" stroke-width="1" opacity="0.3"/>
+      <text x="370" y="148" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="system-ui,sans-serif" font-size="8.5">Single pane of glass for</text>
+      <text x="370" y="160" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="system-ui,sans-serif" font-size="8.5">all pallet movements</text>
+
+      <!-- RIGHT: Pallet Network -->
+      <rect x="600" y="65" width="160" height="120" rx="10" fill="rgba(74,158,255,0.05)" stroke="#4A9EFF" stroke-width="1.5"/>
+      <text x="680" y="92" text-anchor="middle" fill="#E8E8E8" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Pallet Network</text>
+      <text x="680" y="108" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="9.5">API / FTP / Portal</text>
+      <circle cx="665" cy="135" r="4.5" fill="#4A9EFF" opacity="0.4"/>
+      <circle cx="695" cy="135" r="4.5" fill="#4A9EFF" opacity="0.4"/>
+      <circle cx="680" cy="122" r="4.5" fill="#4A9EFF" opacity="0.4"/>
+      <circle cx="680" cy="148" r="4.5" fill="#4A9EFF" opacity="0.4"/>
+      <line x1="670" y1="135" x2="690" y2="135" stroke="#4A9EFF" stroke-width="1" opacity="0.2"/>
+      <line x1="680" y1="127" x2="680" y2="143" stroke="#4A9EFF" stroke-width="1" opacity="0.2"/>
+      <text x="680" y="175" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="system-ui,sans-serif" font-size="8">Hub, trunking &amp; delivery</text>
+
+      <!-- OUTBOUND label -->
+      <text x="430" y="12" text-anchor="middle" fill="#00E85B" font-family="system-ui,sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.5">OUTBOUND</text>
+      <text x="430" y="25" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="system-ui,sans-serif" font-size="8.5">Customer sends freight via pallet network</text>
+
+      <!-- Outbound: Customer to Qargo -->
+      <line x1="150" y1="95" x2="283" y2="95" stroke="#00E85B" stroke-width="2" marker-end="url(#aGR)"/>
+      <text x="216" y="89" text-anchor="middle" fill="#00E85B" font-family="system-ui,sans-serif" font-size="9" font-weight="600">Orders</text>
+
+      <!-- Outbound: Qargo to Network -->
+      <line x1="455" y1="95" x2="598" y2="95" stroke="#00E85B" stroke-width="2" marker-end="url(#aGR)"/>
+      <rect x="470" y="82" width="82" height="16" rx="3.5" fill="rgba(0,232,91,0.1)" stroke="rgba(0,232,91,0.2)" stroke-width="0.5"/>
+      <text x="511" y="93" text-anchor="middle" fill="#00E85B" font-family="system-ui,sans-serif" font-size="8.5">Consignments</text>
+
+      <!-- Outbound: Network returns statuses -->
+      <line x1="598" y1="130" x2="455" y2="130" stroke="#4A9EFF" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#aBL)"/>
+      <rect x="475" y="136" width="48" height="14" rx="3" fill="rgba(74,158,255,0.08)" stroke="rgba(74,158,255,0.15)" stroke-width="0.5"/>
+      <text x="499" y="146" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="7.5">Statuses</text>
+      <rect x="528" y="136" width="36" height="14" rx="3" fill="rgba(74,158,255,0.08)" stroke="rgba(74,158,255,0.15)" stroke-width="0.5"/>
+      <text x="546" y="146" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="7.5">ePOD</text>
+      <rect x="475" y="153" width="56" height="14" rx="3" fill="rgba(74,158,255,0.08)" stroke="rgba(74,158,255,0.15)" stroke-width="0.5"/>
+      <text x="503" y="163" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="7.5">Cross-dock</text>
+      <rect x="536" y="153" width="30" height="14" rx="3" fill="rgba(74,158,255,0.08)" stroke="rgba(74,158,255,0.15)" stroke-width="0.5"/>
+      <text x="551" y="163" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="7.5">COP</text>
+
+      <!-- Divider -->
+      <line x1="40" y1="200" x2="780" y2="200" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+
+      <!-- INBOUND label -->
+      <text x="430" y="222" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.5">INBOUND</text>
+      <text x="430" y="235" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-family="system-ui,sans-serif" font-size="8.5">Network members send freight to customer for delivery</text>
+
+      <!-- Inbound: Network to Qargo -->
+      <line x1="598" y1="260" x2="455" y2="260" stroke="#4A9EFF" stroke-width="2" marker-end="url(#aBL)"/>
+      <rect x="480" y="247" width="80" height="16" rx="3.5" fill="rgba(74,158,255,0.1)" stroke="rgba(74,158,255,0.2)" stroke-width="0.5"/>
+      <text x="520" y="258" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="8.5">Inbound orders</text>
+
+      <!-- Inbound: Qargo to Customer -->
+      <line x1="283" y1="260" x2="150" y2="260" stroke="#4A9EFF" stroke-width="2" marker-end="url(#aBL)"/>
+      <text x="216" y="254" text-anchor="middle" fill="#4A9EFF" font-family="system-ui,sans-serif" font-size="9" font-weight="600">Delivery</text>
+
+      <!-- Inbound: Qargo returns statuses to Network -->
+      <line x1="455" y1="295" x2="598" y2="295" stroke="#00E85B" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#aGR)"/>
+      <rect x="475" y="301" width="48" height="14" rx="3" fill="rgba(0,232,91,0.08)" stroke="rgba(0,232,91,0.15)" stroke-width="0.5"/>
+      <text x="499" y="311" text-anchor="middle" fill="#00E85B" font-family="system-ui,sans-serif" font-size="7.5">Statuses</text>
+      <rect x="528" y="301" width="36" height="14" rx="3" fill="rgba(0,232,91,0.08)" stroke="rgba(0,232,91,0.15)" stroke-width="0.5"/>
+      <text x="546" y="311" text-anchor="middle" fill="#00E85B" font-family="system-ui,sans-serif" font-size="7.5">ePOD</text>
+
+      <!-- Callout -->
+      <rect x="140" y="345" width="520" height="44" rx="7" fill="rgba(0,232,91,0.07)" stroke="rgba(0,232,91,0.18)" stroke-width="1"/>
+      <text x="400" y="366" text-anchor="middle" fill="#00E85B" font-family="system-ui,sans-serif" font-size="11" font-weight="700">Jobs flow in continuously as they become available</text>
+      <text x="400" y="381" text-anchor="middle" fill="rgba(255,255,255,0.45)" font-family="system-ui,sans-serif" font-size="9">No more running imports once or twice a day \u2014 coverage varies by network</text>
+    </svg>
+  </div>
+</div>
+
+<!-- SLIDE 7: Feature Matrix -->
     <div class="slide" data-duration="10000">
       <div class="slide-inner" style="max-width:1020px;">
         <div class="section-label reveal">Capability Matrix</div>
